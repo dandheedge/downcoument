@@ -13,19 +13,19 @@
     </div>
     <vue-html2pdf
     :show-layout="false"
-    :float-layout="false"
+    :float-layout="true"
     :enable-download="true"
     :preview-modal="true"
-    :paginate-elements-by-height="600"
+    :paginate-elements-by-height="1400"
     :filename="documentTitle"
-    :pdf-quality="1.4"
+    :pdf-quality="1.8"
     :manual-pagination="false"
     pdf-format="a4"
     pdf-orientation="portrait"
     pdf-content-width="100%"
     ref="html2Pdf"
     >
-    <section class="p-16" slot="pdf-content">
+    <section class="py-8 px-12" slot="pdf-content">
       <div v-html="content"></div>
     </section>
   </vue-html2pdf>
