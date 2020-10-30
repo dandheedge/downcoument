@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+/* purgecss start ignore */
+body {
+  @apply bg-gray-300 p-6 
+}
+@screen lg {
+  body {
+    @apply p-10;
+  }
+}
+/* purgecss end ignore */
+@tailwind utilities;
